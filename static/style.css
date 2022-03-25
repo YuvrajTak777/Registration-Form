@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+body{
+    height: 100%;
+}
+
+.container{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 600px;
+    color: white;
+}
+.container::before{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 600px;
+    z-index: -1;
+    background: url(https://cdn.wallpapersafari.com/67/31/7lENwM.jpg) no-repeat center center/cover;
+}
+.nav{
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-direction:row ;
+    width: 100%;
+    height: 70px;
+    margin: 0px auto;
+    background-color: #ffffff00;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 90%;
+}
+.list li{
+    padding:15px 30px;
+    height: 50px;
+}
+.list li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.logo{
+    width: 10%;
+    position: relative;
+    top:15px;
+    /* justify-content: center; */
+    height: 50px;
+    padding-right :20px; ;
+    text-align: right;
+
+}
+.logo p{
+    margin-left: 20px;
+    text-align: right;
+    /* margin-left :10px; */
+    margin-top: 5px;
+    font-size: 15px;
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+}
+.logo p:hover{
+    cursor: pointer;
+}
+/* .logo img{
+    height: 40px;
+    width: 300px;
+} */
+.intro{
+    position: relative;
+    top: 101px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.intro h1{
+    font-size: 35px;
+}
+.intro p{
+    text-align: center;
+    width: 900px;
+    margin-top: 70px;
+    font-size: 20px;
+}
+.container2{
+    display: flex;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    /* background-color: cyan; */
+    width: 100%;
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+.container2::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1000px;
+    z-index: -1;
+    background: url(https://wallpapertag.com/wallpaper/middle/a/a/d/417434-download-free-starry-sky-background-1920x1080.jpg) no-repeat center center/cover;
+}
+.box{
+    width: 70%;
+    height: 600px;
+    /* border: 10px solid black; */
+    /* border-radius :20px ; */
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+.item1{
+    position: relative;
+    top: 0px;
+    height: 600px;
+    background-color: #a0a0a0;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item1 h1{
+    font-size: 30px;
+}
+.item2{
+    width: 70%;
+    height: 600px;
+    position: relative;
+    background-color: #efefef;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.head{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head h1{
+    font-size: 30px;
+    text-align: center;
+}
+.head p{
+    font-size: 18px;
+    text-align: center;
+}
+.inner{
+    display: flex;
+    flex-direction: row;
+    /* border: 5px solid black; */
+    height: 500px;
+    width: 100%;
+}
+.form{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 480px;
+}
+.inner1{
+    /* border: 5px solid rgb(3, 82, 255); */
+    width: 60%;
+    height: 500px;
+}
+.inner2{
+    /* background-color: greenyellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid rgb(255, 0, 0); */
+    width: 40%;
+    height: 400px;
+}
+.username{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 5px 0px;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    /* padding: 0px 10px; */
+}
+.password{
+    display: flex;
+    margin: 10px 0px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 120px;
+}
+.email{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 5px 0px;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+}
+.phone{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0px 0px;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+}
+.username input{
+    width: 170px;
+    margin: 0px 5px 0px 5px ;
+    padding: 10px;
+    font-size: 16px;
+    height: 20px;
+    border: 2px solid green;
+}
+.email input{
+    width: 375px;
+    margin: 0px 5px 0px 5px ;
+    padding: 10px;
+    font-size: 16px;
+    height: 20px;
+    border: 2px solid green;
+}
+.phone input{
+    width: 375px;
+    margin: 0px 5px 0px 5px ;
+    padding: 10px;
+    font-size: 16px;
+    height: 20px;
+    border: 2px solid green;
+}
+.password input{
+    width: 375px;
+    margin: 0px 5px 10px 5px ;
+    padding: 10px;
+    font-size: 16px;
+    height: 20px;
+    border: 2px solid green;
+}
+.btn{
+    /* color: white; */
+    position: relative;
+    top: 23px;
+    left: 107px;
+    width: 200px;
+    font-size: 18px;
+    /* padding: 10px; */
+    margin: 0px auto;
+    height: 40px;
+    border: 2px solid green;
+    cursor: pointer;
+}
+.btn:hover{
+    /* background-color: black; */
+    color: white;
+    background-color: #a0a0a0;
+}
+.facebook{
+    width: 240px;
+    height: 90px;
+}
+.google{
+    
+    width: 212px;
+    height: 43px;
+}
+.twitter{
+    width: 220px;
+    height: 50px;
+}
+.inner2 h1{
+    margin-bottom: 30px;
+    font-size: 20px;
+
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 40px;
+    text-align: center;
+}
+.foot h1{
+    font-size: 18px;
+}
+.inner img:hover{
+    cursor: pointer;
+}

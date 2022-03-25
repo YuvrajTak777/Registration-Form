@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+body{
+    height: 100%;
+}
+
+.container{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 600px;
+    color: white;
+}
+.container::before{
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background: url(https://cdn.wallpapersafari.com/67/31/7lENwM.jpg) no-repeat center center/cover;
+}
+.nav{
+    position: relative;
+    top: 0px;
+    display: flex;
+    flex-direction:row ;
+    width: 100%;
+    height: 70px;
+    margin: 0px auto;
+    background-color: #ffffff00;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 90%;
+}
+.list li{
+    padding:15px 30px;
+    height: 50px;
+}
+.list li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.logo{
+    width: 10%;
+    position: relative;
+    top:15px;
+    /* justify-content: center; */
+    height: 50px;
+    padding-right :20px; ;
+    text-align: right;
+
+}
+.logo p{
+    margin-left: 20px;
+    text-align: right;
+    /* margin-left :10px; */
+    margin-top: 5px;
+    font-size: 15px;
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+}
+.logo p:hover{
+    cursor: pointer;
+}
+/* .logo img{
+    height: 40px;
+    width: 300px;
+} */
+.intro{
+    position: relative;
+    top: 101px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.intro h1{
+    font-size: 35px;
+}
+.intro p{
+    text-align: center;
+    width: 900px;
+    margin-top: 70px;
+    font-size: 20px;
+}
+/* .foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 3vh;
+    text-align: center;
+}
+.foot h1{
+    font-size: 18px;
+} */
